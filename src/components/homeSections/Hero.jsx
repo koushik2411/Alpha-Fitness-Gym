@@ -26,6 +26,7 @@ function Hero() {
               src={heroSlides[current].image}
               alt={`Hero ${current + 1}`}
               fill
+              sizes="100vw"
               priority
               className="object-cover"
             />

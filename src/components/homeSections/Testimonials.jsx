@@ -11,7 +11,7 @@ import { testimonials } from "@/lib/testimonials";
 
 function Testimonials() {
      return(
-          <div className=" m-5 mx-auto md:max-w-220 rounded-lg">
+          <div className=" m-5 lg:mx-auto lg:max-w-220 rounded-lg">
 
                <Carousel
                  className={` rounded-lg`}
