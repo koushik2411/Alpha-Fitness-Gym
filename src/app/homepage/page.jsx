@@ -148,10 +148,10 @@ function Homepage() {
               whileInView={{ y: 0, opacity: 1}}
               transition={{ duration: 0.5}}
               viewport={{ once: false}}
-              className=" h-50 md:h-auto flex flex-col items-center justify-center gap-5 rounded-lg shadow-md shadow-red-900 bg-linear-to-b from-red-900/60 to-red-700/60 text-center active:scale-[0.97] backdrop-blur-xs"
+              className=" h-50 md:h-auto flex flex-col items-center justify-center gap-5 rounded-lg bg-linear-to-b from-red-900/60 to-red-700/60 text-center active:scale-[0.97] backdrop-blur-xs"
             >
                 
-              <Link href="/programs" className=" h-full w-full flex flex-col items-center justify-center gap-3">
+              <Link href="/programs" className=" h-full w-full flex flex-col items-center justify-center gap-3 font-semibold">
                 
                 <FaArrowAltCircleRight className=" text-4xl text-red-600 animate-bounce"/>
                 Explore All Programs

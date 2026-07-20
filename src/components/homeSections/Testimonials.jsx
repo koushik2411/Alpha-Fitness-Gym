@@ -11,10 +11,10 @@ import { testimonials } from "@/lib/testimonials";
 
 function Testimonials() {
      return(
-          <div className=" m-5 rounded-lg">
+          <div className=" m-5 mx-auto max-w-220 rounded-lg">
 
                <Carousel
-                 className={` rounded-lg  shadow-md shadow-red-900`}
+                 className={` rounded-lg`}
                >
 
                     <CarouselContent
@@ -34,11 +34,11 @@ function Testimonials() {
                                         </p>
 
                                         <div className=" flex flex-col items-end">
-                                             <h2 className=" text-red-600 font-bold">
+                                             <h2 className=" text-amber-400 font-bold">
                                                   {tm.memberName}
                                              </h2>
 
-                                             <h3 className=" text-sm">
+                                             <h3 className=" text-xs">
                                                   {tm.program}
                                              </h3>
 
