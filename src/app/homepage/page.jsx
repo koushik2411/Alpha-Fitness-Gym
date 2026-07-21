@@ -1,5 +1,6 @@
 "use client"
 
+import Bmi from "@/components/homeSections/Bmi";
 import Testimonials from "@/components/homeSections/Testimonials";
 import { facilities } from "@/lib/facilitiesData";
 import { homePrograms } from "@/lib/programs";
@@ -29,11 +30,11 @@ function Homepage() {
               className=" p-8 flex flex-col items-center justify-center gap-3 bg-black/45 backdrop-blur-xs border-2 border-red-900 rounded-lg shadow-md shadow-red-900 hover:bg-red-950/50"
             >
               
-              <h1 className=" text-4xl font-semibold bg-linear-to-b from-red-900 to-red-500 bg-clip-text text-transparent">
+              <h1 className=" text-4xl font-bold bg-linear-to-b from-red-900 to-red-500 bg-clip-text text-transparent">
                 {stat.count}
               </h1>
 
-              <p className=" text-sm">
+              <p className=" text-sm font-semibold">
                 {stat.title}
               </p>
 
@@ -84,7 +85,7 @@ function Homepage() {
                 transition={{ duration: 0.5}}
                 viewport={{ once: false}}
                 whileHover={{ scale: 1.04 }}
-                key={facility.id}
+                key={id}
                 className=" p-5 flex flex-col items-center justify-center gap-5 rounded-lg shadow-md shadow-red-900  hover:bg-red-900/30 bg-black/45 backdrop-blur-xs text-center"
               >
                 
@@ -121,7 +122,7 @@ function Homepage() {
                 transition={{ duration: 0.5}}
                 viewport={{ once: false}}
                 whileHover={{ scale: 1.03 }}
-                key={program.id}
+                key={id}
                 className=" p-5 flex flex-col items-center justify-center gap-3 rounded-lg shadow-md shadow-red-900 backdrop-blur-xs bg-black/45 hover:bg-red-900/30"
               >
                 
@@ -160,6 +161,19 @@ function Homepage() {
             </motion.div>
 
           </div>
+
+        </section>
+
+        {/* BMI Calculator */}
+        <section className=" p-3 md:p-8 pb-8 border-b-2 border-red-800 flex flex-col gap-5">
+
+          <h1 className=" mx-auto w-fit font-bold text-lg">
+            KNOW YOUR <span className=" text-red-600">BMI</span>
+
+            <div className=" w-full h-1 bg-red-600/70 rounded-[55%]"></div>
+          </h1>
+
+          <Bmi/>
 
         </section>
         
