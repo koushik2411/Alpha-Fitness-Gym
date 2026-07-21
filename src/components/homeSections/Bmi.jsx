@@ -43,6 +43,15 @@ function Bmi() {
 
           setResult(bmi);
      }
+
+     // Reset
+     const reset = () => {
+          setHeight("");
+          setWeight("");
+          setResult("");
+          setRemark("");
+          setMessage("Fill your details to check your BMI status.");
+     }
      
      return(
           <motion.div
@@ -63,7 +72,7 @@ function Bmi() {
                          value={height}
                          onChange={(e) => setHeight(e.target.value.slice(0,3))}
                          placeholder="in cm"
-                         className=" p-2 border rounded outline-none focus:border-2 focus:border-red-700"
+                         className=" w-full p-2 border rounded outline-none focus:border-2 focus:border-red-700"
                     />
 
                     <label>
@@ -71,14 +80,14 @@ function Bmi() {
                     </label>
                </div>
 
-               <div className=" flex flex-col-reverse gap-1">
+               <div className=" min-w-full flex flex-col-reverse gap-1">
 
                     <input
                          type="number"
                          value={weight}
                          onChange={(e) => setWeight(e.target.value.slice(0,3))}
                          placeholder="in kg"
-                         className=" p-2 border rounded outline-none focus:border-2 focus:border-red-700"
+                         className=" w-full p-2 border rounded outline-none focus:border-2 focus:border-red-700"
                     />
 
                     <label className=" font-semibold">
@@ -86,13 +95,25 @@ function Bmi() {
                     </label>
                </div>
 
-               <button 
-                 onClick={calculate}
-                 disabled={!height || !weight}
-                 className=" mt-3 p-2 font-semibold bg-linear-to-b from-red-900 to-red-700/90 rounded-lg cursor-pointer disabled:cursor-not-allowed"
-               >
-                    Calculate
-               </button>
+               <div className=" w-full mt-3 grid grid-cols-2 gap-3">
+
+                    <button 
+                      onClick={calculate}
+                      disabled={!height || !weight}
+                      className=" p-2 font-semibold bg-linear-to-b from-red-900 to-red-700/90 rounded-lg cursor-pointer disabled:cursor-not-allowed"
+                    >
+                        Calculate
+                    </button>
+
+                    <button 
+                      onClick={reset}
+                      disabled={!height || !weight}
+                      className=" p-2 font-semibold bg-linear-to-b from-slate-700 to-slate-800 rounded-lg cursor-pointer disabled:cursor-not-allowed"
+                    >
+                        Reset
+                    </button>
+
+               </div>
 
               </div>
 
