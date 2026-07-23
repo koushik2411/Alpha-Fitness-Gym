@@ -5,7 +5,7 @@ function Contact() {
     <div className=" p-8">
 
       {/* Form div */}
-      <div className=" mx-auto w-140 p-8 flex flex-col gap-5 rounded-lg shadow-md shadow-red-900 backdrop-blur-sm bg-black/50">
+      <div className=" mx-auto md:w-140 p-8 flex flex-col gap-5 rounded-lg shadow-md shadow-red-900 backdrop-blur-sm bg-black/50">
 
         <div className=" flex flex-col gap-2">
 
