@@ -45,12 +45,12 @@ function Hero() {
                 {/* Buttons div */}
                 <div className=" h-10 flex items-center gap-5">
 
-                    <Link href="/about">
-                        <button className=" p-2 px-4 rounded-lg shadow bg-linear-to-b from-amber-600 to-amber-800 text-sm hover:border">Know More</button>
+                    <Link href="/about" className=" p-2 px-4 rounded-lg shadow bg-linear-to-b from-amber-600 to-amber-800 text-sm hover:border active:scale-[0.97]">
+                        Know More
                     </Link>
                     
-                    <Link href="/programs">
-                        <button className=" p-2 px-4 rounded-lg shadow bg-linear-to-b from-red-600 to-red-900 text-sm hover:border">Explore</button>
+                    <Link href="/programs" className=" p-2 px-4 rounded-lg shadow bg-linear-to-b from-red-600 to-red-900 text-sm hover:border active:scale-[0.97]">
+                        Explore
                     </Link>
 
                 </div>

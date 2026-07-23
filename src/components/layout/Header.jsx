@@ -18,8 +18,8 @@ function Header() {
     <header className=" p-3 px-6 flex items-center justify-between sticky top-0 left-0 z-50 shadow bg-black/85 backdrop-blur">
 
         {/* Logo */}
-        <div>
-            ALPHA
+        <div className=" font-bold text-lg bg-linear-to-b from-slate-50 to-slate-400 bg-clip-text text-transparent border-b-4 border-red-700 rounded">
+            <span className=" bg-linear-to-b from-red-500 to-red-800 bg-clip-text text-transparent">A</span>LPHA
         </div>
 
         {/* Navbar (tablet and above) */}
@@ -29,7 +29,7 @@ function Header() {
                 <Link
                   key={index}
                   href={link.destination}
-                  className={` ${pathname === link.destination ? " text-red-500 font-semibold border-b-2" : ""}`}
+                  className={` ${pathname === link.destination ? " text-red-500 font-semibold border-b-2 rounded" : ""}`}
                 >
                     {link.title}
                 </Link>

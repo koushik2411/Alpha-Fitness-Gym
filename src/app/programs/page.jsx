@@ -2,10 +2,10 @@
 
 function Programs() {
     return(
-        <div>
+        <div className=" min-h-screen bg-[url('/images/bgs/programsBG.jpg')] bg-cover bg-center bg-fixed bg-no-repeat">
 
             {/* Overlay */}
-            <div>
+            <div className=" min-h-screen w-full bg-black/60">
 
                 <section>Programs</section>
             </div>

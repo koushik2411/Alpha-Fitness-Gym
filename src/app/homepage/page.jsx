@@ -1,6 +1,8 @@
 "use client"
 
 import Bmi from "@/components/homeSections/Bmi";
+import Contact from "@/components/homeSections/Contact";
+import Gallery from "@/components/homeSections/Gallery";
 import Testimonials from "@/components/homeSections/Testimonials";
 import { facilities } from "@/lib/facilitiesData";
 import { homePrograms } from "@/lib/programs";
@@ -123,7 +125,7 @@ function Homepage() {
                 viewport={{ once: false}}
                 whileHover={{ scale: 1.03 }}
                 key={id}
-                className=" p-5 flex flex-col items-center justify-center gap-3 rounded-lg shadow-md shadow-red-900 backdrop-blur-xs bg-black/45 hover:bg-red-900/30"
+                className=" p-5 flex flex-col items-center justify-center gap-3 rounded-lg shadow-md shadow-red-900 backdrop-blur-xs relative bg-black/45 hover:bg-red-900/30"
               >
                 
                 <img
@@ -191,8 +193,30 @@ function Homepage() {
         </section>
 
         {/* Gallery */}
+        <section className=" p-3 md:p-8 pb-8 border-b-2 border-red-800 flex flex-col gap-5">
+
+          <h1 className=" mx-auto w-fit font-bold text-lg">
+            ALPHA'S <span className=" text-red-600">GALLERY</span>
+
+            <div className=" w-full h-1 bg-red-600/70 rounded-[55%]"></div>
+          </h1>
+
+          <Gallery/>
+          
+        </section>
 
         {/* Contact */}
+        <section className=" p-3 md:p-8 pb-8 border-b-2 border-red-800 flex flex-col gap-5">
+
+          <h1 className=" mx-auto w-fit font-bold text-lg">
+            CONTACT <span className=" text-red-600">US</span>
+
+            <div className=" w-full h-1 bg-red-600/70 rounded-[55%]"></div>
+          </h1>
+
+          <Contact/>
+          
+        </section>
 
     </div>
   )
